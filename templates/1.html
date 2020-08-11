@@ -1,0 +1,19 @@
+<html>
+<h1> Just Empty Page </h1>
+<br>
+<br>
+<body>
+<table border=1>
+
+<a href="/add">add</a><br><br>
+<tr>
+<th>ID</th><th>IP or DNS</th><th>Port</th><th>Ping?</th><th>SNMP?</th>
+</tr>
+{% for a in z %}
+<tr>
+<td>{{ a[0] }}</td><td>{{ a[1] }}</td><td>{{ a[2] }}</td><td>{{ a[3] }}</td><td>{{ a[4] }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

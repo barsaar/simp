@@ -1,0 +1,28 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<br>
+<br>
+<form action = "{{ url_for('add_rec006') }}" method = "POST">
+	<input type="text" id="ip" name="ip" placeholder="IP or DNS to monitor">
+    <label for="ip">IP or DNS for monitoring</label><br>
+	
+	<input type="number" id="Num1" name="Num1" >
+    <label for="Num1">Port:</label><br>
+
+    <input type="checkbox" id="ping" name="ping" value="ping">
+    <label for="ping">PING</label><br>
+  
+    <input type="checkbox" id="snmp" name="snmp" value="snmp">
+    <label for="snmp">SNMP</label><br>
+	
+	<input type = "submit" value = "Submit" /><br>
+</form>
+</body>
+</html>
